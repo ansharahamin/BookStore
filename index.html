@@ -8,11 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-wxM0nB+cYcX2dq0GwMkfHfqx+yrpYVvFxhP7pjZtnRn2/xU8Nf3vDc5VZVnSxDyyhU5Ltx0hehXK6M2hNfVOnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bgclor">
+    <nav class="navbar navbar-expand-md bgclor fixed-top h-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img width="100px" src="images/images-removebg-preview.png" alt=""
                     srcset=""></a>
@@ -29,27 +32,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Books Categories
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
                     </li>
+  
                     <li class="nav-item">
                         <a class="nav-link" aria-disabled="true">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  <input id="searchInput" class="form-control mb-3" placeholder="Search books..." />
+<button id="searchBtn" class="btn btn-outline-success w-10 h-25" type="button">Search</button>
                 </form>
             </div>
         </div>
@@ -98,12 +91,85 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="container">
+    <div class="container mt-4">
+    <div class="row">
+
+        <!-- ⭐ MAIN CONTENT LEFT SIDE -->
+        <div class="col-md-9">
+            
+            <!-- Search bar -->
+
+
+            <!-- Books Cards -->
+            <div id="allCards" class="row"></div>
+        </div>
+
+        <!-- ⭐ RIGHT SIDEBAR -->
+      <div class="col-md-3 bg-light p-3 shadow-sm foot conta" style="min-height: 100vh;">
+
+    <!-- <div class="col-md-3 bg-light p-3 shadow-sm" style="min-height: 100vh;"> -->
+
+    <h4 class="mb-3">Categories</h4>
+    <ul id="categories" class="list-group"></ul>
+        <h4 class="mb-3 mt-4">Sub Categories</h4>
+    <ul id="subCategories" class="list-group"></ul>
+        <button id="viewAllBtn" class="btn btn-outline-success mt-4 mb-3 w-100">View All Books</button>
+</div>
+</div>
+</div>
+
+    
+<button id="goTopBtn" title="Go to top">↑</button>
+<div class="container-fluid">
+<footer class="bg-light text-dark pt-5 pb-3 mt-5 foot">
+  <div class="container">
+    <div class="row">
+
+      <!-- About Section -->
+      <div class="col-md-4 mb-3">
+        <h5>About Us</h5>
+        <p>We provide a wide range of books, from religious texts to fiction and scientific resources. Explore, learn, and grow with us!</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled text-dark">
+          <li><a href="#" class="footer-link text-dark">Home</a></li>
+          <li><a href="#" class="footer-link text-dark">Categories</a></li>
+          <li><a href="#" class="footer-link text-dark">Contact</a></li>
+          <li><a href="#" class="footer-link text-dark">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-4 mb-3">
+        <h5>Follow Us</h5>
+        <a href="#" class="text-light me-2"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="text-light me-2"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="text-light me-2"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-light"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+    </div>
+
+    <hr class="bg-secondary">
+
+    <div class="text-center small">
+      &copy; 2025 YourBookStore. All rights reserved.
+    </div>
+  </div>
+</footer>
+</div>
+
+
+
+    <!-- <div class="container">
         <div id="allCards" class="allCards row">
 
         </div>
-    </div>
-
+    </div> -->
+<script src="https://kit.fontawesome.com/a6450bd60a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

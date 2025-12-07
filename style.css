@@ -2,13 +2,88 @@
     box-sizing: border-box;
 
 }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    padding-top: 0.2rem;    /* default 0.5rem hota hai */
+    padding-bottom: 0.1rem; /* default 0.5rem hota hai */
+    font-size: 0.9rem;      /* links aur text chhote karne ke liye */
+}
 
+/* Navbar brand (logo/text) chhota karne ke liye */
+.navbar-brand {
+    font-size: 1rem; /* default se chhota */
+}
 
+/* Navbar toggler (mobile menu button) chhota karne ke liye */
+.navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
 .bgclor {
     background-color: #C8E6C9;
 }
 .green{
     background-color: #66BB6A;
+}
+#goTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background-color: #66BB6A;
+    color: white;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    transform: translateY(-2px); /* thoda upar move */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* shadow */
+    transition: all 0.3s ease;
+}
+img:hover {
+    transform: scale(1.05); /* thoda enlarge */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* shadow add */
+}
+li:hover {
+    transform: scale(1.05); /* thoda enlarge */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* shadow add */
+}
+.footer-link {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #00bfff;
+    text-decoration: underline;
+}
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.foot{
+    background: linear-gradient(135deg, #d3e0b29f, #6b8e23) !important;
+    /* background-color: #3a471c9f !important; */
+    color: #1a1414 !important;
+    padding: 20px 0;
+}
+#goTopBtn:hover {
+    background-color: #7e9b809f;
 }
 
 @media (max-width: 991px) {
