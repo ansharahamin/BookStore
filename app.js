@@ -269,7 +269,7 @@ var books = {
         author: "Walter Isaacson",
         description: "Life story of Apple founder Steve Jobs.",
         price: 1600,
-        src: "https://m.media-amazon.com/images/I/81VStYnDGrL.jpg",
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKCITfZFYJ1kUlNHNX8ica_ZmYV8fCOzPqnQ&s",
         addToCartBtn: "Add to Cart",
         likeBtn: "Like"
       },
@@ -278,16 +278,16 @@ var books = {
         author: "Nelson Mandela",
         description: "Autobiography of Nelson Mandela.",
         price: 1400,
-        src: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1348410082i/9015.jpg",
+        src: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1682807746i/144720129.jpg",
         addToCartBtn: "Add to Cart",
         likeBtn: "Like"
       },
       book3: {
-        name: "Becoming",
+        name: "From Being to Becoming",
         author: "Michelle Obama",
-        description: "Memoir of the former First Lady.",
+        description: "Living an Authentic and Meaningful Life",
         price: 1500,
-        src: "https://m.media-amazon.com/images/I/81h2gWPTYJL.jpg",
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbcP01T5AvNzIWWc2wQ_oD3TXazdw3YQKFWg&s",
         addToCartBtn: "Add to Cart",
         likeBtn: "Like"
       }
