@@ -395,6 +395,14 @@ for (let category in books) {
     }
   }
 }
+function clickHandler(color){
+return function(){
+  document.body.style.backgroundColor = `${color}`;
+
+}
+}
+document.getElementById("Light").onclick = clickHandler("white")
+document.getElementById("Dark").onclick = clickHandler("black")
 var viewAllBtn = document.getElementById("viewAllBtn");
 
 viewAllBtn.addEventListener("click", function() {
